@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Event Click</title>
+</head>
+<body>
+
+    <h1>Exploring Events</h1>
+
+    <button id="first">Clicked me-1</button>
+    <button id="special-btn">Clicked me-2</button>
+    <button id="third">Clicked me-3</button> 
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, officia est.</p>
+   <p>Error saepe sunt perferendis magni reiciendis dicta laudantium ut voluptatibus natus.</p>
+   <p>Corrupti ratione nemo earum rerum nulla magnam consectetur? Doloribus, tempora reiciendis.</p>
+    <script>
+        function handle(){
+            document.body.style.backgroundColor='red';
+        }
+       var secondbtn = document.getElementById('special-btn');
+       secondbtn.onclick = handle;
+       secondbtn.addEventListener('click',handle);
+    </script>
+
+    <!-- second policy -->
+    <script>
+        document.getElementById('third').addEventListener('click',function(){
+            document.body.style.backgroundColor='blue'
+        });
+    </script>
+
+     <!-- 3rd policy -->
+     <script>
+        document.getElementById('first').addEventListener('click',function(){
+            document.body.style.color='cyan'
+        });
+    </script>
+
+
+</body>
+</html>
