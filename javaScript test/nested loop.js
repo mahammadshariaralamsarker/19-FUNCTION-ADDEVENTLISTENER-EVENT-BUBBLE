@@ -1,6 +1,3 @@
-
-
-
 price(1200, 70, 5, 10);
 function price(PhonePrice, CasePrice, PhoneUnit, CaseUnit) {
     var totalPhoneCost = PhonePrice * PhoneUnit;
