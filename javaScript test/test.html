@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="priceForm" onsubmit="calculateTotal(event)">
+        <input type="number" id="phonePrice" placeholder="Phone Price" required>
+        <input type="number" id="casePrice" placeholder="Case Price" required>
+        <input type="number" id="phoneUnit" placeholder="Quantity of Phones" required>
+        <input type="number" id="caseUnit" placeholder="Quantity of Cases" required>
+
+        <button type="submit">Calculate Total</button>
+    </form>
+
+
+    <script>
+        function priceForm(event) {
+        event.preventDefault();
+        var totalPhoneCost = PhonePrice * PhoneUnit;
+        var totalCaseCost = CasePrice * CaseUnit;
+        TotalCost = totalPhoneCost + totalCaseCost
+        console.log('Phone total cost = ' + totalPhoneCost);
+        console.log('Case total cost = ' + totalCaseCost);
+        console.log('Total bill = ' + TotalCost)
+}
+    </script>
+    <!-- <script>
+        
+            // Get values from input fields
+            var phonePrice = parseFloat(document.getElementById('phonePrice').value);
+            var casePrice = parseFloat(document.getElementById('casePrice').value);
+            var phoneUnit = parseInt(document.getElementById('phoneUnit').value);
+            var caseUnit = parseInt(document.getElementById('caseUnit').value);
+
+            // Calculate total costs
+            var totalPhoneCost = phonePrice * phoneUnit;
+            var totalCaseCost = casePrice * caseUnit;
+            var totalCost = totalPhoneCost + totalCaseCost;
+
+            // Display the results
+            console.log('Phone total cost = ' + totalPhoneCost);
+            console.log('Case total cost = ' + totalCaseCost);
+            console.log('Total bill = ' + totalCost);
+        }
+    </script> -->
+</body>
+</html>
