@@ -19,3 +19,4 @@ function scrollFacebook (){
 explain_callback('sogir uddin',11,washHand);
 explain_callback('Kogir uddin',13,takeShawor);
 explain_callback('Wagis uddin',19,scrollFacebook);
+// the name of our country name is bangladesh >there are six season in a year. there are rainy season ,summer , winter are most common
